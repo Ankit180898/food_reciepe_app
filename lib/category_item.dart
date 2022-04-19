@@ -3,17 +3,18 @@ import 'package:flutter/material.dart';
 import 'package:food_app/category_meal_page.dart';
 class CategoryItem extends StatelessWidget {
 
+  final String id;
   final String title;
   final Color color;
 
-  CategoryItem(this.title,this.color);
+  CategoryItem(this.id,this.title,this.color);
 
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
         onTap: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context)=>CategoryMealsPage()));
+          Navigator.of(context).pushNamed(CategoryMealsPage.routeName,arguments: {'id':id,'title':title});
         },
       splashColor: Theme.of(context).primaryColor,
       borderRadius: BorderRadius.circular(18),
