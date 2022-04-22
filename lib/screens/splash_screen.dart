@@ -13,7 +13,7 @@ class SplashScreen extends StatelessWidget {
           children: <Widget>[
             Image.asset('assets/img/startscreenpic.png'),
             SizedBox(height: 50,),
-            Text('Lets start our day with exiting meals.',style: TextStyle(
+            Text('Lets start our day with exciting meals.',style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w500,
             ),),
