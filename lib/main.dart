@@ -30,7 +30,8 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.pink),
       // home: CategoriesScreen(),
       routes: {
-        '/': (context) => TabsScreen(),
+        '/': (context) => SplashScreen(),
+        TabsScreen.routeName:(context)=>TabsScreen(),
         CategoriesScreen.routeName:(context)=>CategoriesScreen(),
         CategoryMealsPage.routeName: (context) => CategoryMealsPage(),
         MealDetail.routeName:(context)=>MealDetail(),
